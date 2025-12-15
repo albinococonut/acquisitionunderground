@@ -1,0 +1,1011 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Acquisition Underground. Phoenix, AZ. March 19 to 21</title>
+    <meta
+      name="description"
+      content="The Acquisition Underground. The auto repair acquisition strategies you were never supposed to learn. Phoenix, AZ. March 19 to 21."
+    />
+    <meta property="og:title" content="The Acquisition Underground" />
+    <meta
+      property="og:description"
+      content="The auto repair acquisition strategies you were never supposed to learn. Phoenix, AZ. March 19 to 21."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#050A12" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root{
+        --ink:#0B1020;
+        --ink2:#111A33;
+        --bg:#FFFFFF;
+        --paper:#F7F7FA;
+        --sand:#F4F1EA;
+        --ocean0:#050A12;
+        --ocean1:#061126;
+        --ocean2:#07213F;
+        --ocean3:#0A2B52;
+
+        --text:#10131A;
+        --muted:#4A5162;
+        --muted2:#6A7286;
+        --white:#FFFFFF;
+
+        --cta:#111827;
+        --ctaText:#FFFFFF;
+
+        --line:rgba(16,19,26,.10);
+        --lineDark:rgba(255,255,255,.14);
+
+        --radius:14px;
+        --radius2:18px;
+
+        --shadow: 0 18px 60px rgba(10, 15, 25, 0.12);
+        --shadow2: 0 12px 34px rgba(10, 15, 25, 0.14);
+
+        --max: 1120px;
+      }
+
+      *{box-sizing:border-box}
+      html,body{margin:0;padding:0}
+      body{
+        font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        color:var(--text);
+        background:var(--bg);
+        line-height:1.45;
+      }
+
+      a{color:inherit;text-decoration:none}
+      button{font-family:inherit}
+      .container{max-width:var(--max); margin:0 auto; padding:0 22px;}
+      .section{padding:92px 0;}
+      .section-tight{padding:68px 0;}
+      .section-sand{background:var(--sand);}
+      .section-paper{background:var(--paper);}
+      .divider{
+        height:1px;
+        background:var(--line);
+        margin:26px 0;
+      }
+
+      /* Top nav */
+      .nav{
+        position:absolute;
+        top:0; left:0; right:0;
+        z-index:5;
+        padding:20px 0;
+      }
+      .nav-inner{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:12px;
+      }
+      .brand{
+        display:flex; align-items:center; gap:12px;
+        color:rgba(255,255,255,.92);
+      }
+      .mark{
+        width:34px; height:34px;
+        border-radius:10px;
+        background:linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+        border:1px solid rgba(255,255,255,.16);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.10);
+      }
+      .brand-name{
+        font-weight:600;
+        letter-spacing:.2px;
+        font-size:14px;
+        opacity:.95;
+      }
+      .nav-links{
+        display:flex;
+        align-items:center;
+        gap:16px;
+        color:rgba(255,255,255,.82);
+        font-size:13px;
+      }
+      .nav-links a{opacity:.9}
+      .nav-links a:hover{opacity:1}
+      .nav-cta{
+        padding:10px 14px;
+        border-radius:12px;
+        border:1px solid rgba(255,255,255,.18);
+        background:rgba(255,255,255,.06);
+        color:#fff;
+        font-weight:600;
+        font-size:13px;
+        cursor:pointer;
+      }
+      .nav-cta:hover{background:rgba(255,255,255,.10)}
+
+      /* Hero. Dark */
+      .hero{
+        position:relative;
+        min-height: 88vh;
+        display:flex;
+        align-items:flex-end;
+        padding:140px 0 70px;
+        overflow:hidden;
+        color:rgba(255,255,255,.94);
+        background:
+          radial-gradient(1200px 520px at 50% -10%, rgba(255,255,255,.14), rgba(255,255,255,0) 60%),
+          radial-gradient(900px 520px at 16% 30%, rgba(12, 140, 255, .12), rgba(0,0,0,0) 55%),
+          radial-gradient(900px 520px at 84% 22%, rgba(255, 172, 72, .08), rgba(0,0,0,0) 56%),
+          linear-gradient(180deg, var(--ocean0), var(--ocean1) 40%, var(--ocean2));
+      }
+
+      .hero::before{
+        content:"";
+        position:absolute;
+        inset:-30%;
+        background:
+          radial-gradient(800px 420px at 50% 8%, rgba(255,255,255,.10), rgba(255,255,255,0) 60%),
+          radial-gradient(720px 380px at 50% 18%, rgba(255,255,255,.08), rgba(255,255,255,0) 62%),
+          radial-gradient(680px 340px at 50% 28%, rgba(255,255,255,.06), rgba(255,255,255,0) 64%);
+        filter: blur(0px);
+        opacity:.75;
+        transform: translateY(0px);
+        animation: drift 10s ease-in-out infinite;
+        pointer-events:none;
+      }
+
+      .hero::after{
+        content:"";
+        position:absolute;
+        left:0; right:0; bottom:-120px;
+        height:240px;
+        background: radial-gradient(600px 180px at 50% 30%, rgba(255,255,255,.10), rgba(255,255,255,0) 68%);
+        opacity:.55;
+        pointer-events:none;
+      }
+
+      @keyframes drift{
+        0%{ transform: translateY(-6px); opacity:.70;}
+        50%{ transform: translateY(6px); opacity:.82;}
+        100%{ transform: translateY(-6px); opacity:.70;}
+      }
+
+      .hero-grid{
+        display:grid;
+        grid-template-columns: 1.1fr .9fr;
+        gap:36px;
+        align-items:end;
+        position:relative;
+        z-index:2;
+      }
+
+      .kicker{
+        font-size:13px;
+        letter-spacing:.22em;
+        text-transform:uppercase;
+        opacity:.82;
+        margin:0 0 16px;
+      }
+
+      h1{
+        font-family: Fraunces, serif;
+        font-weight:600;
+        letter-spacing:-.02em;
+        font-size: clamp(44px, 5.1vw, 74px);
+        line-height:1.02;
+        margin:0 0 14px;
+      }
+
+      .subhead{
+        font-size: clamp(16px, 1.55vw, 20px);
+        line-height:1.45;
+        opacity:.88;
+        max-width: 56ch;
+        margin:0 0 26px;
+      }
+
+      .hero-meta{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+        align-items:center;
+        margin-top:18px;
+        color:rgba(255,255,255,.78);
+        font-size:13px;
+      }
+
+      .pill{
+        display:inline-flex;
+        align-items:center;
+        gap:8px;
+        padding:10px 12px;
+        border-radius:999px;
+        border:1px solid rgba(255,255,255,.16);
+        background:rgba(255,255,255,.06);
+        backdrop-filter: blur(6px);
+      }
+
+      .actions{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+        align-items:center;
+        margin-top:24px;
+      }
+
+      .btn{
+        appearance:none;
+        border:none;
+        cursor:pointer;
+        border-radius: 14px;
+        padding: 14px 18px;
+        font-weight:700;
+        font-size:14px;
+        letter-spacing:.2px;
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        gap:10px;
+        transition: transform .12s ease, background .12s ease, border-color .12s ease, opacity .12s ease;
+        user-select:none;
+      }
+      .btn:active{transform: translateY(1px);}
+      .btn-primary{
+        background: rgba(255,255,255,.92);
+        color: #0B1020;
+        box-shadow: 0 20px 60px rgba(0,0,0,.25);
+      }
+      .btn-primary:hover{background: rgba(255,255,255,.98);}
+      .btn-ghost{
+        background: rgba(255,255,255,.06);
+        border:1px solid rgba(255,255,255,.18);
+        color:#fff;
+      }
+      .btn-ghost:hover{background: rgba(255,255,255,.10); border-color: rgba(255,255,255,.26);}
+
+      .card{
+        border-radius: var(--radius2);
+        border: 1px solid var(--lineDark);
+        background: rgba(255,255,255,.06);
+        backdrop-filter: blur(8px);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.10);
+        padding: 20px;
+      }
+      .card h3{
+        margin:0 0 10px;
+        font-size:14px;
+        letter-spacing:.14em;
+        text-transform:uppercase;
+        opacity:.86;
+      }
+      .card p{
+        margin:0;
+        color: rgba(255,255,255,.82);
+        font-size:14px;
+        line-height:1.55;
+      }
+      .card .mini{
+        margin-top:14px;
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:10px;
+      }
+      .mini-row{
+        display:flex;
+        justify-content:space-between;
+        gap:12px;
+        padding:10px 12px;
+        border-radius: 12px;
+        border:1px solid rgba(255,255,255,.14);
+        background: rgba(0,0,0,.10);
+        color: rgba(255,255,255,.86);
+        font-size:13px;
+      }
+      .mini-row span:last-child{opacity:.82}
+
+      /* White content */
+      h2{
+        font-family: Fraunces, serif;
+        font-weight:600;
+        letter-spacing:-.01em;
+        font-size: clamp(30px, 3.2vw, 44px);
+        line-height:1.12;
+        margin:0 0 14px;
+      }
+      .lead{
+        color:var(--muted);
+        font-size:18px;
+        max-width: 70ch;
+        margin:0 0 26px;
+      }
+      .grid-2{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:34px;
+        align-items:start;
+      }
+      .bullets{
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+        font-size:16px;
+        line-height:1.65;
+      }
+      .bullets li{margin: 10px 0;}
+      .quote{
+        border-left: 3px solid rgba(10,43,82,.22);
+        padding: 14px 18px;
+        background: rgba(10,43,82,.04);
+        border-radius: 14px;
+        color: var(--ink2);
+        box-shadow: 0 10px 30px rgba(10, 15, 25, 0.06);
+      }
+      .quote strong{
+        display:block;
+        font-family: Fraunces, serif;
+        font-weight:600;
+        font-size:22px;
+        margin-bottom: 8px;
+      }
+      .quote p{margin:0; color: var(--muted); line-height:1.6;}
+
+      /* Speaker cards */
+      .speaker-grid{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:16px;
+      }
+      .speaker{
+        border:1px solid var(--line);
+        border-radius: var(--radius2);
+        background:#fff;
+        box-shadow: var(--shadow2);
+        padding:18px;
+      }
+      .speaker .name{
+        font-family: Fraunces, serif;
+        font-weight:600;
+        font-size:22px;
+        margin:0 0 6px;
+        letter-spacing:-.01em;
+      }
+      .speaker .role{
+        margin:0 0 12px;
+        color: var(--muted2);
+        font-size:13px;
+        letter-spacing:.14em;
+        text-transform:uppercase;
+      }
+      .speaker .bio{
+        margin:0;
+        color: var(--muted);
+        font-size:14.5px;
+        line-height:1.6;
+      }
+
+      /* Dark table section */
+      .dark{
+        background:
+          radial-gradient(900px 520px at 18% 20%, rgba(255, 172, 72, .10), rgba(0,0,0,0) 55%),
+          radial-gradient(900px 520px at 80% 22%, rgba(12, 140, 255, .10), rgba(0,0,0,0) 55%),
+          linear-gradient(180deg, var(--ocean1), var(--ocean0));
+        color: rgba(255,255,255,.92);
+      }
+      .dark h2, .dark .lead{color: rgba(255,255,255,.92)}
+      .dark .lead{opacity:.82}
+      .dark .divider{background: var(--lineDark);}
+      .dark .muted{color: rgba(255,255,255,.74)}
+      .dark .box{
+        border-radius: var(--radius2);
+        border:1px solid rgba(255,255,255,.14);
+        background: rgba(255,255,255,.06);
+        backdrop-filter: blur(8px);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.10);
+        padding:18px;
+      }
+
+      /* Pricing */
+      .price-grid{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:14px;
+        align-items:stretch;
+      }
+      .price{
+        border:1px solid var(--line);
+        border-radius: var(--radius2);
+        background:#fff;
+        box-shadow: var(--shadow2);
+        padding:18px;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        gap:14px;
+      }
+      .price .tag{
+        display:inline-flex;
+        align-items:center;
+        gap:8px;
+        font-size:12px;
+        letter-spacing:.14em;
+        text-transform:uppercase;
+        color: var(--muted2);
+      }
+      .price .amt{
+        font-family: Fraunces, serif;
+        font-weight:600;
+        font-size:34px;
+        letter-spacing:-.02em;
+        margin:0;
+        color: var(--ink2);
+      }
+      .price .note{
+        margin:0;
+        color: var(--muted);
+        font-size:14.5px;
+        line-height:1.55;
+      }
+      .price .btn{
+        width:100%;
+        background: var(--cta);
+        color: var(--ctaText);
+        border-radius: 14px;
+        padding: 14px 16px;
+      }
+      .price .btn:hover{opacity:.92}
+
+      /* Forms */
+      .form{
+        display:grid;
+        gap:12px;
+        max-width: 720px;
+      }
+      .field{
+        display:grid;
+        gap:6px;
+      }
+      .label{
+        font-size:13px;
+        color: var(--muted2);
+        letter-spacing:.10em;
+        text-transform:uppercase;
+      }
+      input, textarea, select{
+        width:100%;
+        padding: 14px 14px;
+        border-radius: 14px;
+        border:1px solid var(--line);
+        background:#fff;
+        color: var(--text);
+        outline:none;
+        font-size:15px;
+      }
+      textarea{min-height:120px; resize: vertical;}
+      input:focus, textarea:focus, select:focus{
+        border-color: rgba(10,43,82,.35);
+        box-shadow: 0 0 0 4px rgba(10,43,82,.10);
+      }
+
+      .form-row{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:12px;
+      }
+
+      /* Footer */
+      footer{
+        padding: 46px 0;
+        color: rgba(255,255,255,.76);
+        background: linear-gradient(180deg, var(--ocean0), #02050C);
+      }
+      .footer-inner{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        gap:14px;
+        align-items:center;
+      }
+      .footer-links{
+        display:flex;
+        gap:14px;
+        font-size:13px;
+        opacity:.9;
+      }
+      .toast{
+        position: fixed;
+        right: 16px;
+        bottom: 16px;
+        z-index: 50;
+        background: rgba(17,24,39,.94);
+        color:#fff;
+        border:1px solid rgba(255,255,255,.14);
+        border-radius: 14px;
+        padding: 12px 14px;
+        box-shadow: 0 20px 60px rgba(0,0,0,.35);
+        max-width: 320px;
+        opacity:0;
+        transform: translateY(10px);
+        transition: opacity .18s ease, transform .18s ease;
+        pointer-events:none;
+        font-size:14px;
+      }
+      .toast.show{
+        opacity:1;
+        transform: translateY(0px);
+      }
+
+      /* Responsive */
+      @media (max-width: 980px){
+        .hero-grid{grid-template-columns: 1fr; gap:18px;}
+        .speaker-grid{grid-template-columns: 1fr; }
+        .grid-2{grid-template-columns: 1fr;}
+        .price-grid{grid-template-columns: 1fr;}
+        .form-row{grid-template-columns: 1fr;}
+        .nav-links{display:none;}
+        .hero{min-height: 92vh;}
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="hero" id="top">
+      <div class="nav">
+        <div class="container">
+          <div class="nav-inner">
+            <a class="brand" href="#top" aria-label="The Acquisition Underground">
+              <div class="mark" aria-hidden="true"></div>
+              <div class="brand-name">The Acquisition Underground</div>
+            </a>
+            <nav class="nav-links" aria-label="Primary">
+              <a href="#about">About</a>
+              <a href="#speakers">Speakers</a>
+              <a href="#table">Underground Table</a>
+              <a href="#pricing">Pricing</a>
+              <a href="#apply">Apply</a>
+            </nav>
+            <a class="nav-cta" href="#apply">Request your seat</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <p class="kicker">Phoenix, Arizona. March 19 to 21</p>
+            <h1>The Acquisition Underground</h1>
+            <p class="subhead">
+              The auto repair acquisition strategies you were never supposed to learn.
+            </p>
+
+            <div class="actions">
+              <a class="btn btn-primary" href="#apply">Request your seat</a>
+              <button class="btn btn-ghost" id="copyDetails" type="button" aria-label="Copy event details">
+                Copy details
+              </button>
+              <a class="btn btn-ghost" href="#pricing">See pricing</a>
+            </div>
+
+            <div class="hero-meta">
+              <span class="pill">In person</span>
+              <span class="pill">Owner focused</span>
+              <span class="pill">Selective attendance</span>
+              <span class="pill">Nothing sold from the stage</span>
+            </div>
+          </div>
+
+          <aside class="card" aria-label="Event snapshot">
+            <h3>Snapshot</h3>
+            <p>
+              This is a gateway event built for auto repair owners who want to understand the ownership
+              transfer underway in the industry. Then decide how they will move.
+            </p>
+            <div class="mini">
+              <div class="mini-row"><span>Dates</span><span>March 19 to 21</span></div>
+              <div class="mini-row"><span>City</span><span>Phoenix, AZ</span></div>
+              <div class="mini-row"><span>Format</span><span>Curated room</span></div>
+              <div class="mini-row"><span>Focus</span><span>Ownership. Acquisitions. Leverage</span></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="about">
+        <div class="container">
+          <h2>A quiet transfer of ownership is already underway in auto repair.</h2>
+          <p class="lead">
+            Independent auto repair is entering a rare moment. Not a trend. Not a tactic. A transition.
+            When ownership changes hands at scale, wealth moves with it.
+          </p>
+
+          <div class="grid-2">
+            <div>
+              <h2 style="font-size:28px;margin-top:0;">This is not about growing faster. It is about being positioned first.</h2>
+              <p class="lead" style="font-size:16.5px;margin-bottom:16px;">
+                Most shop owners are still focused on optimization. Car count. Margins. Marketing. Hiring.
+                Meanwhile, a quieter group is paying attention to who is exiting and who is prepared to buy.
+              </p>
+
+              <div class="quote">
+                <strong>Most owners assume acquisitions require large amounts of upfront cash.</strong>
+                <p>The buyers winning right now know that assumption is wrong.</p>
+              </div>
+
+              <div class="divider"></div>
+              <a class="btn btn-primary" href="#apply" style="background:#111827;color:#fff;">Apply to attend</a>
+            </div>
+
+            <div>
+              <h2 style="font-size:28px;margin-top:0;">Why this conversation feels underground</h2>
+              <p class="lead" style="font-size:16.5px;margin-bottom:0;">
+                Acquisition strategy in auto repair is rarely discussed publicly. Not because it is complicated.
+                Because it is sensitive. Real acquisition conversations require discretion, nuance, and pattern recognition.
+              </p>
+
+              <div class="divider"></div>
+
+              <h2 style="font-size:28px;margin-top:0;">The assumption that keeps most owners stuck</h2>
+              <p class="lead" style="font-size:16.5px;margin-bottom:12px;">
+                Most auto repair shop owners believe the same thing. I would buy another shop if I had the money.
+                That belief feels logical. It is also the reason most owners never buy.
+              </p>
+              <p class="lead" style="font-size:16.5px;margin-top:0;">
+                The majority of successful acquisitions in auto repair are not driven by cash. They are driven by structure,
+                timing, and understanding seller psychology.
+              </p>
+
+              <div class="quote">
+                <strong>Many of the most strategic acquisitions in auto repair are structured, not funded.</strong>
+                <p>This is rarely discussed publicly because it changes how owners see leverage, risk, and growth.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-paper" id="what">
+        <div class="container">
+          <h2>What this event is. And what it intentionally is not.</h2>
+
+          <div class="grid-2" style="margin-top:18px;">
+            <div>
+              <h2 style="font-size:26px;margin-top:0;">What it is</h2>
+              <ul class="bullets">
+                <li>A three day, in person event focused on how acquisitions actually work in auto repair</li>
+                <li>A room designed to change how you see growth, leverage, and timing</li>
+                <li>A gateway into deeper ownership conversations</li>
+              </ul>
+            </div>
+            <div>
+              <h2 style="font-size:26px;margin-top:0;">What it is not</h2>
+              <ul class="bullets">
+                <li>Not a mastermind</li>
+                <li>Not step by step implementation</li>
+                <li>Not a conference</li>
+                <li>Not for first time shop owners</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <h2 style="margin-top:0;">What you will walk away with</h2>
+          <ul class="bullets" style="max-width: 90ch;">
+            <li>Why acquisitions behave differently in auto repair than in other industries</li>
+            <li>Why cash is rarely the constraint most auto repair owners think it is when acquiring shops</li>
+            <li>How sellers think when they are ready to exit</li>
+            <li>Why some owners expand quietly while others stay stuck optimizing</li>
+          </ul>
+
+          <div class="divider"></div>
+
+          <h2 style="margin-top:0;">Who this is for. And who should not attend.</h2>
+          <div class="grid-2" style="margin-top:10px;">
+            <div class="quote">
+              <strong>This event is for</strong>
+              <p>
+                Independent auto repair shop owners. Owners with at least one profitable location.
+                Owners curious about buying versus building. Owners thinking in years, not months.
+              </p>
+            </div>
+            <div class="quote">
+              <strong>This event is not for</strong>
+              <p>
+                Technicians who want to own someday. First time business owners.
+                Owners struggling to make payroll. Anyone looking for marketing tactics, software demos, or quick wins.
+                Anyone uncomfortable being challenged.
+              </p>
+            </div>
+          </div>
+
+          <div style="margin-top:18px;">
+            <a class="btn btn-primary" href="#apply" style="background:#111827;color:#fff;">Request your seat</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="speakers">
+        <div class="container">
+          <h2>The people in the room matter.</h2>
+          <p class="lead">This is not about speakers. It is about access.</p>
+
+          <div class="speaker-grid">
+            <article class="speaker">
+              <h3 class="name">Jesse Jackson</h3>
+              <p class="role">Founder and CEO. Mango Automotive</p>
+              <p class="bio">
+                Built Mango Automotive from zero to eight figures in three years. Operator level experience building and acquiring auto repair businesses with culture-led growth.
+              </p>
+            </article>
+
+            <article class="speaker">
+              <h3 class="name">Sam Khorramian</h3>
+              <p class="role">Co founder. Big Block Realty</p>
+              <p class="bio">
+                Serial entrepreneur behind multiple Inc. 500 companies. Specializes in scaling beyond founder dependency and building enterprises designed to grow, transfer, and compound value.
+              </p>
+            </article>
+
+            <article class="speaker">
+              <h3 class="name">LOS</h3>
+              <p class="role">Entrepreneur and growth strategist. @loshustle</p>
+              <p class="bio">
+                Known for teaching owners how to shift from operator to owner and structure companies as assets rather than jobs. Focused on leverage, systems, and value creation.
+              </p>
+            </article>
+          </div>
+
+          <div class="divider"></div>
+          <a class="btn btn-primary" href="#apply" style="background:#111827;color:#fff;">Apply to attend</a>
+        </div>
+      </section>
+
+      <section class="section dark" id="table">
+        <div class="container">
+          <h2>The Underground Table</h2>
+          <p class="lead">Invitation only. Off agenda. Private.</p>
+
+          <div class="grid-2">
+            <div class="box">
+              <p class="muted" style="margin:0;">
+                A limited number of attendees will be invited to a private dinner with Jesse Jackson, Sam Khorramian, and LOS.
+                No presentations. No audience. No formal structure.
+              </p>
+              <div class="divider"></div>
+              <p class="muted" style="margin:0;">
+                This table is reserved for owners already thinking in acquisitions and ownership.
+                <strong style="color:rgba(255,255,255,.92);font-weight:600;">Attendance at the event does not guarantee access to the table.</strong>
+              </p>
+            </div>
+
+            <div class="box">
+              <p class="muted" style="margin:0;">
+                Request consideration. If selected, you will be contacted directly with details.
+              </p>
+              <div class="divider"></div>
+
+              <form class="form" id="tableForm">
+                <div class="field">
+                  <label class="label" for="tName">Name</label>
+                  <input id="tName" name="name" placeholder="Your name" required />
+                </div>
+                <div class="field">
+                  <label class="label" for="tEmail">Email</label>
+                  <input id="tEmail" type="email" name="email" placeholder="you@company.com" required />
+                </div>
+                <div class="field">
+                  <label class="label" for="tWhy">Why do you want the table</label>
+                  <textarea id="tWhy" name="why" placeholder="Two to four sentences. Be direct." required></textarea>
+                </div>
+
+                <button class="btn btn-primary" type="submit" style="width:100%;background:#fff;color:#0B1020;">
+                  Request consideration
+                </button>
+                <p class="muted" style="margin:0;font-size:12.5px;">
+                  This form is a placeholder. Wire it to your email provider or form backend.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-sand" id="pricing">
+        <div class="container">
+          <h2>Pricing and access</h2>
+          <p class="lead">This is a paid, in person event by design.</p>
+
+          <div class="price-grid" role="list">
+            <div class="price" role="listitem">
+              <div>
+                <div class="tag">Early access</div>
+                <p class="amt">$997</p>
+                <p class="note">
+                  For owners who move early. Limited availability.
+                </p>
+              </div>
+              <a class="btn" href="#apply">Secure your ticket</a>
+            </div>
+
+            <div class="price" role="listitem">
+              <div>
+                <div class="tag">Standard access</div>
+                <p class="amt">$1,497</p>
+                <p class="note">
+                  The core ticket for the curated room.
+                </p>
+              </div>
+              <a class="btn" href="#apply">Secure your ticket</a>
+            </div>
+
+            <div class="price" role="listitem">
+              <div>
+                <div class="tag">Last chance access</div>
+                <p class="amt">$1,997</p>
+                <p class="note">
+                  For owners who decide late. Final release.
+                </p>
+              </div>
+              <a class="btn" href="#apply">Secure your ticket</a>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+          <p class="lead" style="font-size:16.5px;margin:0;">
+            Attendance is selective to protect the quality of the room.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="apply">
+        <div class="container">
+          <h2>Request your seat</h2>
+          <p class="lead">
+            This room is curated. Complete the short application below. If accepted, you will receive a link to complete registration.
+          </p>
+
+          <form class="form" id="applyForm">
+            <div class="form-row">
+              <div class="field">
+                <label class="label" for="aName">Name</label>
+                <input id="aName" name="name" placeholder="Your name" required />
+              </div>
+              <div class="field">
+                <label class="label" for="aEmail">Email</label>
+                <input id="aEmail" type="email" name="email" placeholder="you@company.com" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label class="label" for="aLocations">How many locations</label>
+                <select id="aLocations" name="locations" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>1</option>
+                  <option>2 to 3</option>
+                  <option>4 to 7</option>
+                  <option>8 plus</option>
+                </select>
+              </div>
+              <div class="field">
+                <label class="label" for="aRevenue">Approx annual revenue</label>
+                <select id="aRevenue" name="revenue" required>
+                  <option value="" selected disabled>Select</option>
+                  <option>Under 1M</option>
+                  <option>1M to 3M</option>
+                  <option>3M to 10M</option>
+                  <option>10M plus</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label" for="aWhy">Why are you applying</label>
+              <textarea id="aWhy" name="why" placeholder="What prompted you. What are you hoping to walk away with." required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit" style="background:#111827;color:#fff;max-width:280px;">
+              Submit application
+            </button>
+
+            <p class="lead" style="font-size:14.5px;margin:0;color:var(--muted2);">
+              This form is a placeholder. Wire it to your form backend. Examples: Formspree, Basin, Netlify Forms, or your CRM.
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="section dark" id="close">
+        <div class="container">
+          <h2>Some people will stop here. Others will not.</h2>
+          <p class="lead">
+            For some attendees, this event will be enough. For others, it will become clear that awareness is only the beginning.
+            Those conversations happen after the event. Privately. With the right people.
+          </p>
+
+          <div class="actions">
+            <a class="btn btn-primary" href="#apply" style="background:#fff;color:#0B1020;">Request your seat now</a>
+            <a class="btn btn-ghost" href="#table">Request the table</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-inner">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="mark" aria-hidden="true"></div>
+            <div style="font-weight:600;">The Acquisition Underground</div>
+          </div>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#apply">Apply</a>
+          </div>
+        </div>
+        <div style="margin-top:14px; font-size:12.5px; opacity:.78;">
+          © <span id="year"></span> The Acquisition Underground. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script>
+      const toast = document.getElementById("toast");
+
+      function showToast(msg){
+        toast.textContent = msg;
+        toast.classList.add("show");
+        window.clearTimeout(showToast._t);
+        showToast._t = window.setTimeout(() => toast.classList.remove("show"), 2200);
+      }
+
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+
+      // Copy button. This satisfies a real use case and gives you a true copy button in the UI.
+      const details = "The Acquisition Underground. Phoenix, AZ. March 19 to 21. The auto repair acquisition strategies you were never supposed to learn.";
+      document.getElementById("copyDetails").addEventListener("click", async () => {
+        try{
+          await navigator.clipboard.writeText(details);
+          showToast("Copied event details.");
+        }catch(e){
+          showToast("Copy failed. Your browser blocked clipboard access.");
+        }
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener("click", (e) => {
+          const id = a.getAttribute("href");
+          const el = document.querySelector(id);
+          if(!el) return;
+          e.preventDefault();
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+          history.replaceState(null, "", id);
+        });
+      });
+
+      // Placeholder form submits
+      document.getElementById("applyForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        showToast("Application captured. Connect this form to your backend.");
+        e.target.reset();
+      });
+
+      document.getElementById("tableForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        showToast("Table request captured. Connect this form to your backend.");
+        e.target.reset();
+      });
+    </script>
+  </body>
+</html>
